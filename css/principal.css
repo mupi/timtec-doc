@@ -1,3 +1,17 @@
+a {
+	cursor: pointer;
+}
+img {
+	margin: 0.5em;
+}
 .alphabetical-list {
 	list-style-type: lower-alpha;
+}
+
+#sidebar-menu{
+	margin-top: 1em;
+}
+#sidebar-menu li > ul{
+	margin-left: 20px;
+	font-size: 12px;
 }
