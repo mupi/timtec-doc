@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -6,19 +5,16 @@
   <title>Manual do professor</title>
   <link rel="stylesheet" type="text/css" href="css/principal.css" />
   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+  <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 </head>
 
 <body>
   <div class="container">
-    <h2>Guia - administrador</h2>
-    <p>
-      Apenas ao usuário que é administrador da plataforma é permitido criar um curso. 
-    </p>  
     <div class="row">
      <!-- menu -->
-     <div class="col-md-4" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
-      <ul class="nav nav-pills nav-stacked">
+     <div data-spy="affix" data-offset-top="0">
+      <ul class="nav nav-pills nav-stacked" id="sidebar-menu">
         <li>
           <a href="#new-course">Como criar um curso</a>
         </li>
@@ -27,14 +23,20 @@
         </li>
       </ul>
       </div>
-      <!-- conteúdo guia -->
-      <div class="col-md-8"> 
 
-        <h3 id="new-course">Como criar um curso</h3>
+      <!-- conteúdo guia -->
+      <div class="col-md-8 col-md-offset-4">
+        <div class="page-header">
+          <h1>Guia TIM Tec <small> Administrador</small></h1>
+          <p>
+            Apenas ao usuário que é administrador da plataforma é permitido criar um curso.
+          </p>
+        </div>
+        <h3 class="page-header" id="new-course">Como criar um curso</h3>
         <p>
-          Primeiramente, é necessário estar na área de administração da plataforma. 
-          Para isso, após efetuar seu login, clique no botão que contém seu nome de 
-          usuário e selecione <strong>ADMINISTRAÇÃO</strong>. 
+          Primeiramente, é necessário estar na área de administração da plataforma.
+          Para isso, após efetuar seu login, clique no botão que contém seu nome de
+          usuário e selecione <strong>ADMINISTRAÇÃO</strong>.
         </p>
         <img src="img/new-course.png" title="acessando área de admin" alt="Área de admin"/>
         <p>Após isso:</p>
@@ -43,66 +45,66 @@
             Clique no botão <strong>NOVO CURSO</strong> localizado à direita da página.
           </li>
           <li>
-            Clique em cada um dos campos para inserir os dados do curso e salve 
+            Clique em cada um dos campos para inserir os dados do curso e salve
             cada alteração. Veja <span class="#ini-course">aqui</span> como preencher cada campo.
           </li>
           <li>
-            Salve o curso clicando no botão <strong>SALVAR</strong>. Veja que, 
-            aqui, o curso ainda não está visível para o público, mas apenas 
+            Salve o curso clicando no botão <strong>SALVAR</strong>. Veja que,
+            aqui, o curso ainda não está visível para o público, mas apenas
             para você.
           </li>
           <li>
-            Torne o curso visível ao público na plataforma clicando no 
+            Torne o curso visível ao público na plataforma clicando no
             botão <strong>PUBLICAR</strong>.
           </li>
         </ol>
 
-        <h3 id="ini-course">Descrição dos campos da página inicial do curso</h3>
+        <h3 class="page-header" id="ini-course">Descrição dos campos da página inicial do curso</h3>
         <p>
-          O preenchimento de todo campo é obrigatório. Caso algum campo não seja 
+          O preenchimento de todo campo é obrigatório. Caso algum campo não seja
           preenchido, ele será exibido vazio ao aluno.
         </p>
         <p>
-          Veja a seguir a descrição de cada um dos campos. Para preenchê-los, basta clicar 
+          Veja a seguir a descrição de cada um dos campos. Para preenchê-los, basta clicar
           sobre eles e editá-los.
         </p>
         <ol>
           <li>
-            <strong>Nome do curso</strong>: preencha com o nome do curso. Veja 
-            que abaixo deste campo é exibido o link direto para o curso. Este 
+            <strong>Nome do curso</strong>: preencha com o nome do curso. Veja
+            que abaixo deste campo é exibido o link direto para o curso. Este
             link é gerado automaticamente pela plataforma.
           </li>
           <li>
-            <strong>Vídeo ou Thumbnail</strong>: aqui você escolhe se a página 
-            inicial do curso terá um vídeo de apresentação ou uma imagem. Caso for um vídeo, 
-            clique no botão <strong>VIDEO</strong>, insira o ID do link do YouTube e 
-            clique em <strong>ADICIONAR</strong>. O ID é a parte final do vídeo que o 
-            identifica, por exemplo, no link 
+            <strong>Vídeo ou Thumbnail</strong>: aqui você escolhe se a página
+            inicial do curso terá um vídeo de apresentação ou uma imagem. Caso for um vídeo,
+            clique no botão <strong>VIDEO</strong>, insira o ID do link do YouTube e
+            clique em <strong>ADICIONAR</strong>. O ID é a parte final do vídeo que o
+            identifica, por exemplo, no link
             <a href="https://www.youtube.com/watch?v=mIvLsglRZdQ" target="a_blank">
-              https://www.youtube.com/watch?v=mIvLsglRZdQ</a> 
-              o ID é <strong>mIvLsglRZdQ</strong>. Caso for uma imagem, clique em 
-              <strong>THUMBNAIL</strong>, escolha o arquivo da imagem e 
+              https://www.youtube.com/watch?v=mIvLsglRZdQ</a>
+              o ID é <strong>mIvLsglRZdQ</strong>. Caso for uma imagem, clique em
+              <strong>THUMBNAIL</strong>, escolha o arquivo da imagem e
               clique em <strong>Adicionar</strong>.
             </li>
             <li>
-              <strong>Resumo</strong>: insira aqui um resumo apresentando o curso. 
-              Nossa sugestão é que sejam usadas palavras-chave indicando sobre o 
-              que trata o curso. 
+              <strong>Resumo</strong>: insira aqui um resumo apresentando o curso.
+              Nossa sugestão é que sejam usadas palavras-chave indicando sobre o
+              que trata o curso.
             </li>
             <li>
-              <strong>ADICIONAR INSTRUTOR</strong>: adicione o instrutor que será o 
+              <strong>ADICIONAR INSTRUTOR</strong>: adicione o instrutor que será o
               responsável pelo curso. Você pode adicionar mais de um instrutor.
             </li>
             <li>
-              <strong>Por que fazer esse curso?</strong>: descreva aqui de maneira 
-              clara quais são as aplicações dos conhecimentos adquiridos após 
-              a conclusão do curso, nos contextos profissional e social do aluno. 
-              Pense nas seguintes perguntas: o que posso estudar agora? 
-              O que consigo fazer agora? Em que posso trabalhar agora? 
+              <strong>Por que fazer esse curso?</strong>: descreva aqui de maneira
+              clara quais são as aplicações dos conhecimentos adquiridos após
+              a conclusão do curso, nos contextos profissional e social do aluno.
+              Pense nas seguintes perguntas: o que posso estudar agora?
+              O que consigo fazer agora? Em que posso trabalhar agora?
             </li>
             <li>
-              <strong>O que eu preciso saber?</strong>: utilize este campo para 
-              descrever dois tipos de requisitos: 
+              <strong>O que eu preciso saber?</strong>: utilize este campo para
+              descrever dois tipos de requisitos:
               <ul>
                 <li>
                   Quais os conhecimentos prévios necessários para realizar este curso.
@@ -111,19 +113,19 @@
                   Quais os requisitos de infraestrutura para realizar este curso.
                 </li>
               </ul>
-            </li> 
+            </li>
             <li>
-              <strong>Estrutura</strong>: neste campo, explique de maneira 
-              sucinta a metodologia do curso, como serão oferecidas as aulas, 
-              quais os tipos de atividade, avaliação, enfim, quais os recursos de 
+              <strong>Estrutura</strong>: neste campo, explique de maneira
+              sucinta a metodologia do curso, como serão oferecidas as aulas,
+              quais os tipos de atividade, avaliação, enfim, quais os recursos de
               aprendizagens disponíveis.
-            </li>    
+            </li>
             <li>
-              <strong>Aulas</strong>: este campo contém o principal conteúdo do curso. Aqui, 
-              serão inseridas as videoaulas e os vídeos. Para mais detalhes 
+              <strong>Aulas</strong>: este campo contém o principal conteúdo do curso. Aqui,
+              serão inseridas as videoaulas e os vídeos. Para mais detalhes
               sobre o conteúdo das aulas clique <a href="hyperlink">aqui</a>.
             </li>
-          </ol> 
+          </ol>
           <img src="img/new-course-page.png" title="página de edição do curso" alt="Edição do curso"/>
         </div>
       </div>
