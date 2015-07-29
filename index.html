@@ -45,22 +45,22 @@
           </a>
           <ul id="about-lesson" class="collapse nav nav-pills nav-stacked">
             <li>
-              <a href="#add-class">Como adicionar uma aula</a>
+              <a href="#add-lesson">Como adicionar uma aula</a>
             </li>
             <li>
-              <a href="#edit-class">Como editar uma aula</a>
+              <a href="#edit-lesson">Como editar uma aula</a>
             </li>
             <li>
-              <a href="#del-class">Como apagar uma aula</a>
+              <a href="#del-lesson">Como apagar uma aula</a>
             </li>
             <li>
               <a href="#add-video">Como adicionar vídeos nas aulas</a>
             </li>
             <li>
-              <a href="#edit-video-class">Como alterar o vídeo de uma aula</a>
+              <a href="#edit-video-lesson">Como alterar o vídeo de uma aula</a>
             </li>
             <li>
-              <a href="#org-class">Como organizar as aulas</a>
+              <a href="#org-lesson">Como organizar as aulas</a>
             </li>
           </ul>
         </li>
@@ -125,6 +125,25 @@
         </li>
         <li>
           <a href="#material">Como adicionar material didático</a>
+        </li>
+        <li>
+          <a data-toggle="collapse" data-target="#about-class">
+            <span class="glyphicon glyphicon-chevron-down"></span> Sobre as turmas
+          </a>
+          <ul id="about-class" class="collapse nav nav-pills nav-stacked">
+            <li>
+              <a href="#menu-class">Como acessar o menu de turmas de um curso</a>
+            </li>
+            <li>
+              <a href="#add-class">Como adicionar uma turma a um curso</a>
+            </li>
+            <li>
+              <a href="#add-assistant">Como adicionar professor assistente a uma turma</a>
+            </li>
+            <li>
+              <a href="#add-students-to-class">Como adicionar estudantes a uma turma</a>
+            </li>
+          </ul>
         </li>
         <li>
           <a href="#message">Como enviar mensagens aos alunos</a>
@@ -301,7 +320,7 @@
           </ol>
           <img src="img/new-course-page.png" title="página de edição do curso" alt="Edição do curso" class="img-responsive" />
 
-          <h3 class="page-header" id="add-class">Como adicionar uma aula</h3>
+          <h3 class="page-header" id="add-lesson">Como adicionar uma aula</h3>
           <p>
             As aulas são responsáveis por grande parte conteúdo do curso. Elas são
             constituídas por unidades sendo que cada unidade contém um vídeo
@@ -368,7 +387,7 @@
           <img src="img/new-class-page.png" title="página da aula" alt="Preenchendo o camṕos da aula" class="img-responsive" />
 
 
-          <h3 class="page-header" id="edit-class">Como editar uma aula</h3>
+          <h3 class="page-header" id="edit-lesson">Como editar uma aula</h3>
           <p>
             Você pode alterar qualquer conteúdo das aulas, desde seu título ou
             descrição, até suas atividades e vídeo.
@@ -396,7 +415,7 @@
             </li>
           </ol>
 
-          <h3 class="page-header" id="del-class">Como apagar uma aula</h3>
+          <h3 class="page-header" id="del-lesson">Como apagar uma aula</h3>
           <p>
             Você pode apagar qualquer aula dentro de um curso. Para isso:
           </p>
@@ -461,7 +480,7 @@
               </li>
             </ol>
 
-            <h3 class="page-header" id="edit-video-class">Como alterar o vídeo de uma aula</h3>
+            <h3 class="page-header" id="edit-video-lesson">Como alterar o vídeo de uma aula</h3>
             <p>
               Para alterar um ou mais vídeo nas aulas, realize os seguintes passos:
             </p>
@@ -1014,6 +1033,54 @@
                   visíveis aos alunos.
                 </li>
               </ol>
+
+              <h3 class="page-header" id="menu-class">Como acessar o menu de turmas de um curso</h3>
+              <p>
+                Os estudantes de cada curso podem ser agrupados e gerenciados por turmas, o número de turmas que podem ser criadas por curso é ilimitado.
+              </p>
+              <p>
+                Todo estudante faz parte de ao menos uma turma nos cursos em que está inscrito.
+              </p>
+              <p>
+                Por meio da separação de turmas, é possível executar ações com grupos de estudantes específicos, como, por exemplo, enviar mensagens e gerenciar relatórios. Para acessar o gerenciamento de turmas de curso, acesse o menu de <strong>FERRAMENTAS</strong> na página do curso (fora da área administrativa), como na imagem abaixo:
+              </p>
+              <p><img src="img/access-class.png" title="Menu de turmas"
+                    alt="Menu de acesso às turmas de um curso" class="img-responsive" /></p>
+
+
+             <h3 class="page-header" id="add-class">Como adicionar uma turma a um curso</h3>
+              <p>
+                Para adicionar uma nova turma a um curso, é necessário estar no <a href="#menu-class" alt="Como acessar o menu de turmas de um curso">menu de turmas</a> do curso em questão e seguir os seguintes passos:
+              </p>
+              <ol>
+                <li>Clique no botão <strong>ADICIONAR TURMA</strong> no canto superior direito, acima da lista das turmas existentes.</li>
+                <li>Preencha o campo <strong>NOME DA NOVA TURMA</strong>.</li>
+                <li>Clique em <strong>ADICIONAR TURMA</strong> para confirmar.</li>
+              </ol>
+              <p>Após a confirmação, o usuário é redirecionado para a <a href="#menu-class" alt="Como acessar o menu de turmas de um curso">página da nova turma</a>.</p>
+
+              <h3 class="page-header" id="add-assistant">Como adicionar um professor assistente a uma turma</h3>
+              <p>
+                Na <a href="#menu-class" alt="Como acessar o menu de turmas de um curso">lista de turmas</a> do curso
+                é possível acessar a página de cada turma, clicando no nome da turma desejada ou no botão que possui o ícone de ferramenta <i class="glyphicon glyphicon-cog"></i>.
+                O acesso a essa página também é feito logo após a criação de uma nova turma.
+              </p>
+              <p>Para adicionar um professor assistente, escolha o professor desejado dentre as opções do campo <strong>PROFESSOR ASSISTENTE</strong>, como na imagem abaixo.</p>
+              <p><img src="img/assistant.png" title="Escolha de professor assistente"
+                    alt="Seletor de professor assistente" class="img-responsive" /></p>
+              <p>
+                <strong>IMPORTANTE:</strong> só aparecerão nas opções os professores cadastrados com a permissão de professor assistente na sessão administrativa do curso.
+              </p>
+
+              <h3 class="page-header" id="add-students-to-class">Como adicionar estudantes a uma turma</h3>
+              <p>
+                Na página de gestão da turma escolhida, que pode ser acessada através da lista de turmas de cada curso,
+                é possível adicionar alunos por meio do botão <strong>ADICIONAR USUÁRIO</strong>.
+              </p>
+              <p>
+                Aparecerá um modal no qual você deve inserir a lista de alunos que farão parte da turma em questão. É necessário colocar um usuário por linha. Para confirmar, clique em <strong>ADICIONAR USUÁRIO</strong>.
+              </p>
+
 
               <h3 class="page-header" id="message">Como enviar mensagens aos alunos</h3>
               <p>
