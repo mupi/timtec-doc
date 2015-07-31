@@ -5,8 +5,9 @@
   <title>Manual do professor</title>
   <link rel="stylesheet" type="text/css" href="css/principal.css" />
   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
-  <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
   <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 
 </head>
 
@@ -15,150 +16,152 @@
   <div class="container">
     <div class="row">
      <!-- menu -->
-     <div data-spy="affix" data-offset-top="0" class="hidden-print hidden-xs">
-      <ul class="nav nav-pills nav-stacked" id="sidebar-menu">
-        <li>
-          <a href="#admin">Como acessar a área de administração</a>
-        </li>
-        <li>
-          <a data-toggle="collapse" data-target="#about-courses">
-            <span class="glyphicon glyphicon-chevron-down"></span> Sobre a página do curso
-          </a>
-          <ul id="about-courses" class="collapse nav nav-pills nav-stacked">
-            <li>
-              <a href="#edit-course">Como editar um curso</a>
-            </li>
-            <li>
-              <a href="#del-course">Como apagar um curso</a>
-            </li>
-            <li>
-              <a href="#edit-video">Alterar vídeo ou imagem da página inicial</a>
-            </li>
-            <li>
-              <a href="#page-course">Descrição da página inicial do curso</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a data-toggle="collapse" data-target="#about-lesson">
-            <span class="glyphicon glyphicon-chevron-down"></span> Sobre as aulas
-          </a>
-          <ul id="about-lesson" class="collapse nav nav-pills nav-stacked">
-            <li>
-              <a href="#add-lesson">Como adicionar uma aula</a>
-            </li>
-            <li>
-              <a href="#edit-lesson">Como editar uma aula</a>
-            </li>
-            <li>
-              <a href="#del-lesson">Como apagar uma aula</a>
-            </li>
-            <li>
-              <a href="#add-video">Como adicionar vídeos nas aulas</a>
-            </li>
-            <li>
-              <a href="#edit-video-lesson">Como alterar o vídeo de uma aula</a>
-            </li>
-            <li>
-              <a href="#org-lesson">Como organizar as aulas</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-            <a href="#question">Onde eu verifico as dúvidas?</a>
-        </li>
-        <li>
-          <a data-toggle="collapse" data-target="#about-activity">
-            <span class="glyphicon glyphicon-chevron-down"></span> Sobre as atividades
-          </a>
-          <ul id="about-activity" class="collapse nav nav-pills nav-stacked">
-            <li>
-              <a href="#add-act">Como adicionar uma atividade</a>
-            </li>
-            <li>
-              <a href="#edit-act">Como editar uma atividade</a>
-            </li>
-            <li>
-              <a href="#del-act">Como apagar uma atividade</a>
-            </li>
-            <li>
-              <a href="#act">Descrição dos tipos de atividade</a>
-            </li>
-            <li>
-              <a href="#fill-act">Como preencher cada tipo de atividade</a>
-              <ul class="nav nav-pills nav-stacked">
-                <li>
-                  <a href="#act-1">Escolha simples</a>
-                </li>
-                <li>
-                  <a href="#act-2">Múltipla escolha</a>
-                </li>
-                <li>
-                  <a href="#act-3">Verdadeiro ou falso</a>
-                </li>
-                <li>
-                  <a href="#act-4">Relacionar sentenças</a>
-                </li>
-                <li>
-                  <a href="#act-5">HTML5</a>
-                </li>
-                <li>
-                  <a href="#act-6">Texto simples</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
+     <div class="col-md-4">
+       <div id="nav-affix" class="hidden-print hidden-xs hidden-sm affix-top">
+        <ul class="nav nav-pills nav-stacked" id="sidebar-menu">
+          <li>
+            <a href="#admin">Como acessar a área de administração</a>
+          </li>
+          <li>
+            <a data-toggle="collapse" data-target="#about-courses">
+              <span class="glyphicon glyphicon-chevron-down"></span> Sobre a página do curso
+            </a>
+            <ul id="about-courses" class="collapse nav nav-pills nav-stacked">
+              <li>
+                <a href="#edit-course">Como editar um curso</a>
+              </li>
+              <li>
+                <a href="#del-course">Como apagar um curso</a>
+              </li>
+              <li>
+                <a href="#edit-video">Alterar vídeo ou imagem da página inicial</a>
+              </li>
+              <li>
+                <a href="#page-course">Descrição da página inicial do curso</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a data-toggle="collapse" data-target="#about-lesson">
+              <span class="glyphicon glyphicon-chevron-down"></span> Sobre as aulas
+            </a>
+            <ul id="about-lesson" class="collapse nav nav-pills nav-stacked">
+              <li>
+                <a href="#add-lesson">Como adicionar uma aula</a>
+              </li>
+              <li>
+                <a href="#edit-lesson">Como editar uma aula</a>
+              </li>
+              <li>
+                <a href="#del-lesson">Como apagar uma aula</a>
+              </li>
+              <li>
+                <a href="#add-video">Como adicionar vídeos nas aulas</a>
+              </li>
+              <li>
+                <a href="#edit-video-lesson">Como alterar o vídeo de uma aula</a>
+              </li>
+              <li>
+                <a href="#org-lesson">Como organizar as aulas</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+              <a href="#question">Onde eu verifico as dúvidas?</a>
+          </li>
+          <li>
+            <a data-toggle="collapse" data-target="#about-activity">
+              <span class="glyphicon glyphicon-chevron-down"></span> Sobre as atividades
+            </a>
+            <ul id="about-activity" class="collapse nav nav-pills nav-stacked">
+              <li>
+                <a href="#add-act">Como adicionar uma atividade</a>
+              </li>
+              <li>
+                <a href="#edit-act">Como editar uma atividade</a>
+              </li>
+              <li>
+                <a href="#del-act">Como apagar uma atividade</a>
+              </li>
+              <li>
+                <a href="#act">Descrição dos tipos de atividade</a>
+              </li>
+              <li>
+                <a href="#fill-act">Como preencher cada tipo de atividade</a>
+                <ul class="nav nav-pills nav-stacked">
+                  <li>
+                    <a href="#act-1">Escolha simples</a>
+                  </li>
+                  <li>
+                    <a href="#act-2">Múltipla escolha</a>
+                  </li>
+                  <li>
+                    <a href="#act-3">Verdadeiro ou falso</a>
+                  </li>
+                  <li>
+                    <a href="#act-4">Relacionar sentenças</a>
+                  </li>
+                  <li>
+                    <a href="#act-5">HTML5</a>
+                  </li>
+                  <li>
+                    <a href="#act-6">Texto simples</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
 
-        <li>
-          <a data-toggle="collapse" data-target="#about-unity">
-            <span class="glyphicon glyphicon-chevron-down"></span> Sobre as unidades
-          </a>
-          <ul id="about-unity" class="collapse nav nav-pills nav-stacked">
-            <li>
-              <a href="#add-unit">Como adicionar uma unidade</a>
-            </li>
-            <li>
-              <a href="#del-unit">Como apagar uma unidade</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#material">Como adicionar material didático</a>
-        </li>
-        <li>
-          <a data-toggle="collapse" data-target="#about-class">
-            <span class="glyphicon glyphicon-chevron-down"></span> Sobre as turmas
-          </a>
-          <ul id="about-class" class="collapse nav nav-pills nav-stacked">
-            <li>
-              <a href="#menu-class">Como acessar o menu de turmas de um curso</a>
-            </li>
-            <li>
-              <a href="#add-class">Como adicionar uma turma a um curso</a>
-            </li>
-            <li>
-              <a href="#add-assistant">Como adicionar professor assistente a uma turma</a>
-            </li>
-            <li>
-              <a href="#add-students-to-class">Como adicionar estudantes a uma turma</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#message">Como enviar mensagens aos alunos</a>
-        </li>
-        <li>
-          <a href="#report">Como acessar as estatísticas dos cursos</a>
-        </li>
-      </ul>
+          <li>
+            <a data-toggle="collapse" data-target="#about-unity">
+              <span class="glyphicon glyphicon-chevron-down"></span> Sobre as unidades
+            </a>
+            <ul id="about-unity" class="collapse nav nav-pills nav-stacked">
+              <li>
+                <a href="#add-unit">Como adicionar uma unidade</a>
+              </li>
+              <li>
+                <a href="#del-unit">Como apagar uma unidade</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#material">Como adicionar material didático</a>
+          </li>
+          <li>
+            <a data-toggle="collapse" data-target="#about-class">
+              <span class="glyphicon glyphicon-chevron-down"></span> Sobre as turmas
+            </a>
+            <ul id="about-class" class="collapse nav nav-pills nav-stacked">
+              <li>
+                <a href="#menu-class">Como acessar o menu de turmas de um curso</a>
+              </li>
+              <li>
+                <a href="#add-class">Como adicionar uma turma a um curso</a>
+              </li>
+              <li>
+                <a href="#add-assistant">Como adicionar professor assistente a uma turma</a>
+              </li>
+              <li>
+                <a href="#add-students-to-class">Como adicionar estudantes a uma turma</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#message">Como enviar mensagens aos alunos</a>
+          </li>
+          <li>
+            <a href="#report">Como acessar as estatísticas dos cursos</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <!-- texto do guia -->
 
-    <div class="col-md-8 col-md-offset-4">
+    <div class="col-md-8">
       <div class="page-header">
-        <h1>Guia TIM Tec <small>Instrutor</small></h1>
+        <h1>Guia TIM Tec <small>Professor</small></h1>
       </div>
 
       <h3 class="page-header" id="admin">Como acessar a área de administração</h3>

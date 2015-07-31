@@ -5,27 +5,30 @@
   <title>Manual do professor</title>
   <link rel="stylesheet" type="text/css" href="css/principal.css" />
   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
-  <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
   <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </head>
 
 <body>
   <div class="container">
     <div class="row">
      <!-- menu -->
-     <div data-spy="affix" data-offset-top="0" class="hidden-print hidden-xs">
-      <ul class="nav nav-pills nav-stacked" id="sidebar-menu">
-        <li>
-          <a href="#new-course">Como criar um curso</a>
-        </li>
-        <li>
-          <a href="#ini-course">Descrição da página inicial do curso</a>
-        </li>
-      </ul>
+      <div class="col-md-4">
+       <div id="nav-affix" class="hidden-print hidden-xs hidden-sm affix-top">
+        <ul class="nav nav-pills nav-stacked" id="sidebar-menu">
+          <li>
+            <a href="#new-course">Como criar um curso</a>
+          </li>
+          <li>
+            <a href="#ini-course">Descrição da página inicial do curso</a>
+          </li>
+        </ul>
+        </div>
       </div>
 
       <!-- conteúdo guia -->
-      <div class="col-md-8 col-md-offset-4">
+      <div class="col-md-8">
         <div class="page-header">
           <h1>Guia TIM Tec <small> Administrador</small></h1>
           <p>
