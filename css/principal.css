@@ -4,12 +4,17 @@ a {
 img {
 	margin: 0.5em;
 }
+
+.doc{
+	padding-top: 30px;
+}
 .alphabetical-list {
 	list-style-type: lower-alpha;
 }
 
 #sidebar-menu{
 	margin-top: 1em;
+	width: 350px;
 }
 #sidebar-menu li > ul{
 	margin-left: 20px;
