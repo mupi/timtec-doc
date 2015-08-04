@@ -4,7 +4,10 @@ a {
 img {
 	margin: 0.5em;
 }
-
+.page-header{
+	padding-top: 40px;
+	margin-top: 0;
+}
 .doc{
 	padding-top: 30px;
 }
